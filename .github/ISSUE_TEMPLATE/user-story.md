@@ -1,0 +1,10 @@
+---
+name: User Story
+about: This is our user story template
+title: 'USER STORY: <TITTLE>'
+labels: ''
+assignees: ''
+
+---
+
+As a <ROLE>, I can <CAPABILITY> so that <RECEIVED BENEFIT>
