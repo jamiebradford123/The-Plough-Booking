@@ -7,4 +7,9 @@ assignees: ''
 
 ---
 
-As a <ROLE>, I can <CAPABILITY> so that <RECEIVED BENEFIT>
+As a **ROLE**, I can **CAPABILITY** so that **RECEIVED BENEFIT**
+
+
+Acceptance Criteria:
+
+Tasks:
