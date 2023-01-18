@@ -2,10 +2,12 @@
 name: User Story
 about: This is our user story template
 title: 'USER STORY: <TITTLE>'
-labels: ''
+labels: STORY
 assignees: ''
 
 ---
+
+Epic: 
 
 As a **ROLE**, I can **CAPABILITY** so that **RECEIVED BENEFIT**
 
