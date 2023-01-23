@@ -1,1 +1,1 @@
-web: gunicorn the-plough.wsgi
+web: gunicorn the-plough-booking.wsgi
