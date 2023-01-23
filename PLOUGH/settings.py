@@ -58,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'THE-PLOUGH-BOOKING.urls'
+ROOT_URLCONF = 'PLOUGH.urls'
 
 TEMPLATES = [
     {
@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'PLOUGH.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-    
+
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
