@@ -1,5 +1,5 @@
 """
-WSGI config for PLOUGH project.
+WSGI config for theplough project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PLOUGH.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'theplough.settings')
 
 application = get_wsgi_application()
