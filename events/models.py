@@ -28,10 +28,11 @@ class Event(models.Model):
 
 # Taken from CI Blog app tutorial
 
+
 class Comment(models.Model):
-    post = models.ForeignKey(Event, on_delete=models.CASCADE,
+    event = models.ForeignKey(Event, on_delete=models.CASCADE,
                              related_name="comments")
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
