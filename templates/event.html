@@ -9,8 +9,9 @@
         <!-- Event Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
+
             {% for event in event_list %}
-              <div class="col-md-4">
+            <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
                         <div class="image-container">
@@ -26,22 +27,23 @@
                                 <p class="date">Date: {{ event.event_date }}</p>
                             </div>
                         </div>
-                            <a href="#" class="event-link">
-                                <h2 class="card-title">{{ event.title }}</h2>
-                                <p class="card-text">{{ event.excerpt }}</p>
-                            </a>
-                            <hr />
-                            <p class="card-text texed-muted h6">{{ event.created_on }}
-                                <i class="far fa-thumbs-up"></i>{{ event.number_interested }}
-                            </p>
-                    
+                        <a href="#" class="event-link">
+                            <h2 class="card-title">{{ event.title }}</h2>
+                            <p class="card-text">{{ event.excerpt }}</p>
+                        </a>
+                        <hr />
+                        <p class="card-text texed-muted h6">{{ event.created_on }}
+                            <i class="far fa-thumbs-up"></i>{{ event.number_interested }}
+                        </p>
+                    </div>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            
+            {% if forloop.counter|divisibleby:3 %}
             </div>
             <div class="row">
                 {% endif %}
                 {% endfor %}
-
             </div>
         </div>
     </div>
@@ -53,7 +55,6 @@
             {% endif %}
             {% if page_obj.has_next %}
             <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
-
             {% endif %}
         </ul>
     </nav>
