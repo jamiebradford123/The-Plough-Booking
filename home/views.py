@@ -7,3 +7,9 @@ def index(request):
     """
 
     return render(request, "index.html")
+
+def gallery(request):
+    """
+    Renders the menu page
+    """
+    return render(request, "menu.html")
