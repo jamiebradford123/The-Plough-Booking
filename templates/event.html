@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+
 {% block content %}
 
 <div class="container-fluid">
@@ -21,19 +22,19 @@
                             <img class="card-img-top" src="{ event.featured_image.url }" 
                             alt="image related to the event">
                             {% endif %}
-                            <!-- <div class="image-flash">
-                                <p class="date">Date": {{ event.date }}</p>
-                            </div> -->
+                            <div class="image-flash">
+                                <p class="date">Date: {{ event.event_date }}</p>
+                            </div>
+                        </div>
                             <a href="#" class="event-link">
                                 <h2 class="card-title">{{ event.title }}</h2>
                                 <p class="card-text">{{ event.excerpt }}</p>
                             </a>
                             <hr />
                             <p class="card-text texed-muted h6">{{ event.created_on }}
-                                <i class="fa-solid fa-star"></i>{{ event.number_interested }}
+                                <i class="far fa-thumbs-up"></i>{{ event.number_interested }}
                             </p>
-                        </div>
-                    </div>
+                    
                 </div>
                 {% if forloop.counter|divisibleby:3 %}
             </div>

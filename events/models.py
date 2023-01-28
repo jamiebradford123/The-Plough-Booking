@@ -23,8 +23,8 @@ class Event(models.Model):
     def __str__(self):
         return self.title
 
-    def number_interesed(self):
-        return self.interesed.count()
+    def number_interested(self):
+        return self.interested.count()
 
 # Taken from CI Blog app tutorial
 
