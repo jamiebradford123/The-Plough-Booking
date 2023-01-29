@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Event
+from .forms import CommentForm 
 
 
 class EventList(generic.ListView):
@@ -25,6 +26,8 @@ class EventDetail(View):
             {
                 "event": event,
                 "comments": comments,
-                "interested": interested
+                "interested": interested,
+                "comment_form": CommentForm(),
             }
         )
+
