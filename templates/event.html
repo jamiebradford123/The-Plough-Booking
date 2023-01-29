@@ -11,11 +11,12 @@
             <div class="row">
 
             {% for event in event_list %}
-            <div class="col-md-4">
-                <div class="card mb-4">
+            <div class="col-md-6">
+                <div class="card mb-6">
                     <div class="card-body">
                         <div class="image-container">
                             {% if "placeholder" in event.featured_image.url %}
+                            <a href="{% url 'event_detail' event.slug %}" class="event-link">
                             <img class="card-img-top" 
                             src="https://media-cdn.tripadvisor.com/media/photo-s/0b/fc/88/6b/traditional-village-pub.jpg" 
                             alt="picture of the plough">
@@ -27,7 +28,6 @@
                                 <p class="date">Date: {{ event.event_date }}</p>
                             </div>
                         </div>
-                        <a href="{% url 'event_detail' event.slug %}" class="event-link">
                             <h2 class="card-title">{{ event.title }}</h2>
                             <p class="card-text">{{ event.excerpt }}</p>
                         </a>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             
-            {% if forloop.counter|divisibleby:3 %}
+            {% if forloop.counter|divisibleby:2 %}
             </div>
             <div class="row">
                 {% endif %}
