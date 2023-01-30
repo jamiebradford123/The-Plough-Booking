@@ -128,14 +128,14 @@ body {
     text-decoration: underline;
 }
 
-.btn-like {
+.btn-interested {
     color: #E84610;
     border: none;
     background: transparent;
 }
 
-.btn-like:hover,
-.btn-like:active {
+.btn-interested:hover,
+.btn-interested:active {
     color: #E84610;
     background: transparent;
     border: none;

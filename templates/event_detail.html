@@ -37,12 +37,12 @@
                                 {%  csrf_token %}
                                 {%  if interested %}
 
-                                <button type="submit" name="event_id" value="{{event.slug}}" class="btn-like">
+                                <button type="submit" name="event_id" value="{{event.slug}}" class="btn-interested">
                                     <i class="fas fa-thumbs-up"></i>
                                 </button>
 
                                 {% else %}
-                                <button type="submit" name="event_id" value="{{event.slug}}" class="btn-like">
+                                <button type="submit" name="event_id" value="{{event.slug}}" class="btn-interested">
                                     <i class="far fa-thumbs-up"></i>
                                 </button>
                                 {% endif %}
