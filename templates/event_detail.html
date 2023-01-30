@@ -31,7 +31,30 @@
                 <div class="row">
 
                     <div class="col-1">
-                        <strong class="text-secondary"><i class="far fa-thumbs-up"></i> {{ event.number_of_likes }} </strong>
+                        <strong>
+                            {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'event_interested' event.slug %}" method="POST">
+                                {%  csrf_token %}
+                                {%  if interested %}
+
+                                <button type="submit" name="event_id" value="{{event.slug}}" class="btn-like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </button>
+
+                                {% else %}
+                                <button type="submit" name="event_id" value="{{event.slug}}" class="btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </button>
+                                {% endif %}
+
+                            </form>
+                            {% else %}
+
+                            <span class="text-secondary"><i class="far fa-thumbs-up"></i>></span>
+                            {% endif %}
+                        <span class="text-secondary"> {{ event.number_interested }} </span>
+
+                        </strong>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
@@ -73,6 +96,7 @@
                     Your comment is awaiting approval
                 </div>
                 {% else %}
+
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
