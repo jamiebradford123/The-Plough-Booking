@@ -9,8 +9,38 @@ body {
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
+header.masthead {
+    padding-top: 20.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url('https://thealchemist.uk.com/wp-content/uploads/2016/06/Dining-Area-15-1400x934.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+header.masthead .masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    font-family: 'Roboto Slab', serif;
+  }
+  header.masthead .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.card-group {
+    margin-top: 50px;
 }
 
 .thin {

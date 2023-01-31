@@ -1,8 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
+<header class="masthead">
+  <div class="container">
+      <div class="masthead-subheading">Welcome to The Plough!</div>
+      <div class="masthead-heading text-uppercase">Reserve a table today</div>
+      <a class="btn btn-primary btn-xl text-uppercase" href="{% url 'book' %}">Book</a>
+  </div>
+</header>
 
-<div class="card-group">
+<div class="card-group mt-10">
     <div class="card">
         <a class="nav-link active" aria-current="page" href="{% url 'event' %}">
       <img src="https://cdn.encoreglobal.com/wp-content/uploads/sites/8/2020/12/30234938/Event-Stage-Production-Set-Design.jpg" class="card-img-top" alt="event image">
