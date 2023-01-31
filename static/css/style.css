@@ -43,6 +43,10 @@ header.masthead .masthead-subheading {
     margin-top: 50px;
 }
 
+.card-body {
+    color: #4A4A4F;
+}
+
 .thin {
     font-weight: 300;
 }
@@ -169,4 +173,8 @@ header.masthead .masthead-subheading {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+footer a {
+    color: white;
 }
