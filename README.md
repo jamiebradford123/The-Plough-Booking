@@ -53,14 +53,28 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
+The Plough website allows users to do multiple things, such as make, edit or cancel a reservation. Users will also be able to view, like and comment on events that will be occuring at the pub. 
 
-### User Stories
+Having an online presence will help boost this businesses returns, as it will reach a wider audience who will be able to see what food, drink and events the Plough offers. First time users and especially those that have never visited the establishment may discover something that interests them and encourage them to book and visit the Pub. Returning members can keep visiting to see the latest events and edit/cancel or make another booking. 
 
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+# Client goals
+-
+-
+-
+
+# First time visitor goals
+-
+-
+-
+
+# Returning visitor goals
+-
+-
+-
+
+# Frequent visitors
 
 ## Design
-
 👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
 ### Colour Scheme
