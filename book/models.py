@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator
 from cloudinary.models import CloudinaryField
 
+
 class Book(models.Model):
     name = models.CharField(max_length=50)
     number_of_guests = models.PositiveIntegerField(validators=[MinValueValidator(1)])

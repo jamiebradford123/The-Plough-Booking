@@ -2,6 +2,19 @@
 
 {% block content %}
 
-<h1>HI</h1>
+{% load crispy_forms_tags %}
+
+
+
+<h1>BOOK NOW</h1>
+
+{% if user.is_authenticated %}
+<form method="post" style="margin-top: 1.3em;">
+    {{ book_form | crispy }}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+</form>
+
+{% endif %}
 
 {%endblock%}
