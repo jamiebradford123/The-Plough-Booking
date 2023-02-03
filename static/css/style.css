@@ -182,3 +182,8 @@ header.masthead .masthead-subheading {
 footer a {
     color: white;
 }
+
+a, u {
+    text-decoration: none;
+  }
+
