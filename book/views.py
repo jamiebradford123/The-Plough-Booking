@@ -1,33 +1,25 @@
-from django.shortcuts import render, get_object_or_404, redirect
-from django.views import generic, View
-from .models import Book
+from django.contrib.auth.decorators import login_required
 from .forms import BookForm
-from django.http import HttpResponseRedirect
+from django.shortcuts import redirect,render
 
-# This is a function, not a Class so should be lowercase name
+@login_required(login_url="accounts/login")
 def book(request):
-    form = BookForm()
-    # POST logic
-    if request.method == 'POST':
-        # If not authorized, redirect them
-        if not request.user.is_authenticated:
-            return HttpResponseRedirect("accounts/login")
-        # otherwise, instantiate a form using POST data
-        else:
-            form = BookForm(request.POST)
-            # If the data is valid, save to the DB
-            if form.is_valid():
-                form.save()
-                return redirect('book')
-            else:
-                print(form.errors)
-    # GET logic
-    context = {
-        'book_form': form,
-    }
 
+    if request.method=="POST":
+        book_form = BookForm(request.POST)
+
+        if book_form.is_valid():
+            book_form.save()
+            return render(request,"success.html")
+
+        else:       
+            return render(request,"fail.html")
+    else:
+        book_form = BookForm()
     return render(
         request,
         "book.html",
-        context
+        {
+            "book_form": book_form,
+        }
     )
