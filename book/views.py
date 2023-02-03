@@ -18,10 +18,18 @@ def Book(request):
         }
     else:
         return HttpResponseRedirect("accounts/login")
+
+    book_form = BookForm(data=request.POST)
+
+    if book_form.is_valid():
+        instance = book_form.save(commit=False)
+        instance.save()
+    else:
+        book_form = BookForm()
     return render(
         request,
         "book.html",
         {
-            "book_form": BookForm()
+            "book_form": BookForm(),
         }
     )

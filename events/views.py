@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Event
-from .forms import CommentForm 
+from .forms import CommentForm
 
 
 class EventList(generic.ListView):
@@ -10,6 +10,7 @@ class EventList(generic.ListView):
     queryset = Event.objects.filter(status=1).order_by('created_on')
     template_name = 'event.html'
     paginate_by = 6
+
 
 class EventDetail(View):
 
@@ -40,7 +41,7 @@ class EventDetail(View):
         interested = False
         if event.interested.filter(id=self.request.user.id).exists():
             interested = True
-    
+
         comment_form = CommentForm(data=request.POST)
 
         if comment_form.is_valid():
@@ -74,7 +75,5 @@ class EventInterested(View):
             event.interested.remove(request.user)
         else:
             event.interested.add(request.user)
-        
+
         return HttpResponseRedirect(reverse('event_detail', args=[slug]))
-
-
