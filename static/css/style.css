@@ -9,6 +9,10 @@ body {
     color: #4A4A4F;
 }
 
+h1 {
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 50px;
+}
 header.masthead {
     padding-top: 20.5rem;
     padding-bottom: 6rem;
