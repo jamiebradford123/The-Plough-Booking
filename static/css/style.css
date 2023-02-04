@@ -17,6 +17,10 @@ h1 {
 h3 {
     font-family: 'Playfair Display', serif;
 }
+
+h6 {
+    padding-left: 30px;
+}
 header.masthead {
     padding-top: 20.5rem;
     padding-bottom: 6rem;
@@ -30,6 +34,23 @@ header.masthead {
     height: 90vh;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6)
+}
+
+header.masthead.menu {
+    padding-top: 5.5rem;
+    height: 40vh;
+}
+
+header.masthead.menu.breakfast {
+    background-image: url('https://recipes.net/wp-content/uploads/2021/11/best-american-breakfast-foods.jpg');
+}
+
+header.masthead.menu.main {
+    background-image: url('https://images.immediate.co.uk/production/volatile/sites/2/2019/10/134_Roma_9780451497017_art_r1-facac84.jpg?quality=90&resize=700,466');
+}
+
+header.masthead.menu.drinks {
+    background-image: url('https://www.tastingtable.com/img/gallery/20-best-wine-brands-ranked/l-intro-1655749840.jpg');
 }
 
 header.masthead .masthead-subheading {
@@ -193,6 +214,10 @@ a, u {
 
 .price{
     padding: 16px;
+}
+
+.drinks{
+    padding: 6px;
 }
   @media (min-width: 1000px) { 
     .card, mb-3, menu-card{
