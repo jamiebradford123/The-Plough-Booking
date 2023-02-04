@@ -13,6 +13,10 @@ h1 {
     font-family: 'Playfair Display', serif;
     padding-bottom: 50px;
 }
+
+h3 {
+    font-family: 'Playfair Display', serif;
+}
 header.masthead {
     padding-top: 20.5rem;
     padding-bottom: 6rem;
@@ -187,3 +191,16 @@ a, u {
     text-decoration: none;
   }
 
+.price{
+    padding: 16px;
+}
+  @media (min-width: 1000px) { 
+    .card, mb-3, menu-card{
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+        max-height: 60%;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+}
+  }
