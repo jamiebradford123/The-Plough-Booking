@@ -219,7 +219,15 @@ a, u {
 .drinks{
     padding: 6px;
 }
-  @media (min-width: 1000px) { 
+
+.fab{
+    font-size: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+@media (min-width: 1000px) { 
     .card, mb-3, menu-card{
         border-top-left-radius: calc(0.25rem - 1px);
         border-top-right-radius: calc(0.25rem - 1px);
@@ -227,5 +235,11 @@ a, u {
         max-width: 60%;
         margin-left: auto;
         margin-right: auto;
+    }
 }
-  }
+@media (max-width: 500px) {
+    .fab{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
