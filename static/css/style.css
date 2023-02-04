@@ -53,6 +53,7 @@ header.masthead.menu.drinks {
     background-image: url('https://www.tastingtable.com/img/gallery/20-best-wine-brands-ranked/l-intro-1655749840.jpg');
 }
 
+
 header.masthead .masthead-subheading {
     font-size: 1.5rem;
     font-style: italic;
@@ -235,6 +236,9 @@ a, u {
         max-width: 60%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .card-body {
+        padding: 0px;
     }
 }
 @media (max-width: 500px) {
