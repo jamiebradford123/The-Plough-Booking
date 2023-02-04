@@ -21,7 +21,7 @@
                             src="https://media-cdn.tripadvisor.com/media/photo-s/0b/fc/88/6b/traditional-village-pub.jpg" 
                             alt="picture of the plough">
                             {% else %}
-                            <img class="card-img-top" src="{ event.featured_image.url }" 
+                            <img class="card-img-top" src="{{ event.featured_image.url }}" 
                             alt="image related to the event">
                             {% endif %}
                             <div class="image-flash">
