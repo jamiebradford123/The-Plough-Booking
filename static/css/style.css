@@ -228,6 +228,7 @@ a, u {
     padding-top: 10px;
 }
 
+
 @media (min-width: 1000px) { 
     .card, mb-3, menu-card{
         border-top-left-radius: calc(0.25rem - 1px);
@@ -238,7 +239,8 @@ a, u {
         margin-right: auto;
     }
     .card-body {
-        padding: 0px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 @media (max-width: 500px) {

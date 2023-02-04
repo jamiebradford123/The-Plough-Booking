@@ -7,14 +7,14 @@
         <!-- Event Entries Column -->
         <div class="container">
             <div class="row">
-            <h1 class="display-1 d-flex justify-content-center">Event's</h1>
+                <h1 class="display-1 d-flex justify-content-center">Events</h1>
             {% for event in event_list %}
-            <div class="col-lg-6 d-flex justify-content-center">
-                <div class="card mb-12">
+            <div class="col-lg-6 col-md-10 d-flex justify-content-center mb-10">
+                <div class="card event mb-12">
                     <div class="card-body">
+                        <a href="{% url 'event_detail' event.slug %}" class="event-link">
                         <div class="image-container">
                             {% if "placeholder" in event.featured_image.url %}
-                            <a href="{% url 'event_detail' event.slug %}" class="event-link">
                             <img class="card-img-top" 
                             src="https://media-cdn.tripadvisor.com/media/photo-s/0b/fc/88/6b/traditional-village-pub.jpg" 
                             alt="picture of the plough">
@@ -37,10 +37,6 @@
                 </div>
             </div>
             
-            {% if forloop.counter|divisibleby:2 %}
-            </div>
-            <div class="row">
-                {% endif %}
                 {% endfor %}
             </div>
         </div>
