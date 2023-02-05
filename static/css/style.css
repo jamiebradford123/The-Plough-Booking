@@ -228,6 +228,13 @@ a, u {
     padding-top: 10px;
 }
 
+h1.post-title {
+    padding: 5px;
+}
+
+p.post-subtitle {
+    padding: 5px;
+}
 
 @media (min-width: 1000px) { 
     .card, mb-3, menu-card{

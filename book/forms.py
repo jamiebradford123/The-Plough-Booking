@@ -1,12 +1,8 @@
 from .models import Book
 from django import forms
-
+from datetime import date, datetime
 
 class DateInput(forms.DateInput):
-    """
-    A class to register the input_type
-    as date
-    """
     input_type = "date"
 
 class BookForm(forms.ModelForm):
@@ -16,9 +12,11 @@ class BookForm(forms.ModelForm):
             'name',
             'number_of_guests',
             'date',
+            'time',
             'email',
             'requests',
         ]
         widgets = {
             "date": DateInput(),
+            'time': forms.TimeInput(attrs={'type': 'time'})
         }

@@ -5,12 +5,10 @@
 {% load crispy_forms_tags %}
 
 
-
-<h1>BOOK NOW</h1>
-
-{% if user.is_authenticated %}
 <div class="container">
   <div class="row">
+      <h1 class="display-1 d-flex justify-content-center">Book now</h1>
+{% if user.is_authenticated %}
     <div class="col-md-8 mt-3 offset-md-2">
 <form method="post" style="margin-top: 1.3em;">
     {{ book_form | crispy }}
