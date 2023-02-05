@@ -1,3 +1,18 @@
-<h1>
-    SUCCESS
-</h1>
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-heading text-uppercase">Booking Recieved!
+        </div>
+        <div class="masthead-subheading">
+            Thank you for your booking! The restaurant will contact you within 24 hours to 
+            confirm your booking has been accepted!
+        </div>
+    </div>
+  </header>
+
+{%endblock%}

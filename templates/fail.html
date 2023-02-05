@@ -1,3 +1,17 @@
-<h1>
-    fail
-</h1>
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-heading text-uppercase">Booking Failed!
+        </div>
+        <div class="masthead-subheading">
+            Please try again
+        </div>
+    </div>
+  </header>
+
+{%endblock%}
