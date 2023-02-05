@@ -2,8 +2,10 @@ from .models import Book
 from django import forms
 from datetime import date, datetime
 
+
 class DateInput(forms.DateInput):
     input_type = "date"
+
 
 class BookForm(forms.ModelForm):
     class Meta:

@@ -7,9 +7,6 @@ def index(request):
 def menu(request):
     return render(request, "menu.html")
 
-def mybookings(request):
-    return render(request, "mybookings.html")
-
 def breakfast(request):
     return render(request, "breakfast.html")
 

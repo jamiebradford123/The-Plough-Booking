@@ -1,5 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% load crispy_forms_tags %}
 
+<h1>My bookings</h1>
+<h2>List bookings</h2>
+<table class="table table_id pt-5 text-center">
+     <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Date Of Visit</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Name">{{ mybooking.name }}</td>
+        <td data-label="Date">{{ book.date }}</td>
+        
+    </tbody>
+  </table>
+<button>edit</button>
+<button>cancel</button>
 {%endblock%}
