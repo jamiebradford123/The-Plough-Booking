@@ -4,8 +4,4 @@ from book.models import Book
 
 
 def mybookings(request):
-    mybookings = BookForm.all()
-    context = {
-        'mybookings': mybookings
-    }
-    return render(request, "mybookings.html", context)
+    return render(request, "mybookings.html")
