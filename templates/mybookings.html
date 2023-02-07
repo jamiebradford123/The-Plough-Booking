@@ -6,27 +6,28 @@
 <h1>All Bookings</h1>
 <table class="table table_id pt-5 text-center">
      <thead>
+
       <tr>
         <th scope="col">Name</th>
         <th scope="col">Date</th>
         <th scope="col">Time</th>
         <th scope="col">Number of People</th>
         <th scope="col">Requests</th>
-        <th scope="col">Email</th>
         <th scope="col">Created_on</th>
-        <th scope="col">Updated On</th>
         <th scope="col">Approved</th>
-
-
-
-        
-
       </tr>
     </thead>
     <tbody>
+      {% for book in booking %}
       <tr>
-        <td data-label="Name">{{ mybooking.name }}</td>
+        <td data-label="Name">{{ book.name }}</td>
         <td data-label="Date">{{ book.date }}</td>
+        <td data-label="Time">{{ book.time }}</td>
+        <td data-label="Guests">{{ book.number_of_guests }}</td>
+        <td data-label="Requests">{{ book.requests }}</td>
+        <td data-label="Created_on">{{ book.created_on }}</td>
+        <td data-label="Approved">{{ book.apporoved }}</td>
+        {% endfor %}
         
     </tbody>
   </table>
