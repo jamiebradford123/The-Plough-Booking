@@ -29,9 +29,19 @@
         <td data-label="Approved">
           {% if book.approved == True %} 
           <i class="fas fa-check green-text"></i> 
-          {% else %} <span class="text-warning">Awaiting Approval</span></td>
+          {% else %} <span class="red-text">X</span></td>
           {% endif %}
-        <td data-label="Button"><button>Edit</button><button>Delete</button></td>
+        <td data-label="Button">
+          <a href="edit/{{ book.id }}">
+              <button>Edit</button>
+          </a>
+          <a href="toggle/{{ book.id }}">
+              <button>Toggle</button>
+          </a>
+          <a href="delete/{{ book.id }}">
+            <button>Delete</button>
+        </a>
+        </td>
         {% endfor %}
         
     </tbody>

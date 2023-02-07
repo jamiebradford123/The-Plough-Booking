@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+
+<div class="container">
+  <div class="row">
+      <h1 class="display-1 d-flex justify-content-center">Edit Booking</h1>
+{% if user.is_authenticated %}
+    <div class="col-md-8 mt-3 offset-md-2">
+<form method="POST" style="margin-top: 1.3em;">
+    {{ book_form | crispy }}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-signup btn-lg mt-2 mb-2">Update</button>
+</form>
+    </div>
+  </div>
+</div>
+  
+
+{% endif %}
+
+{%endblock%}

@@ -239,6 +239,9 @@ p.post-subtitle {
 .green-text {
     color: green;
 }
+.red-text {
+    color: red;
+}
 
 @media (min-width: 1000px) { 
     .card, mb-3, menu-card{
