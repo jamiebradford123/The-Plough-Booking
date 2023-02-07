@@ -13,8 +13,9 @@
         <th scope="col">Time</th>
         <th scope="col">Number of People</th>
         <th scope="col">Requests</th>
-        <th scope="col">Created_on</th>
         <th scope="col">Approved</th>
+        <th scope="col"></th>
+
       </tr>
     </thead>
     <tbody>
@@ -25,12 +26,14 @@
         <td data-label="Time">{{ book.time }}</td>
         <td data-label="Guests">{{ book.number_of_guests }}</td>
         <td data-label="Requests">{{ book.requests }}</td>
-        <td data-label="Created_on">{{ book.created_on }}</td>
-        <td data-label="Approved">{{ book.apporoved }}</td>
+        <td data-label="Approved">
+          {% if book.approved == True %} 
+          <i class="fas fa-check green-text"></i> 
+          {% else %} <span class="text-warning">Awaiting Approval</span></td>
+          {% endif %}
+        <td data-label="Button"><button>Edit</button><button>Delete</button></td>
         {% endfor %}
         
     </tbody>
   </table>
-<button>edit</button>
-<button>cancel</button>
 {%endblock%}

@@ -236,6 +236,10 @@ p.post-subtitle {
     padding: 5px;
 }
 
+.green-text {
+    color: green;
+}
+
 @media (min-width: 1000px) { 
     .card, mb-3, menu-card{
         border-top-left-radius: calc(0.25rem - 1px);

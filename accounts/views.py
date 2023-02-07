@@ -4,7 +4,7 @@ from book.models import Book
 
 
 def mybookings(request):
-    booking = Book.objects.filter()
+    booking = Book.objects.order_by('date')
     context = {
             "booking": booking,
      }
