@@ -3,6 +3,7 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
+{% if request.user.is_authenticated %} {% if request.user.is_staff %}
 <h1>All Bookings</h1>
 <table class="table table_id pt-5 text-center">
      <thead>
@@ -46,4 +47,8 @@
         
     </tbody>
   </table>
+  {% else %}
+  <h1>hi</h1>
+  {% endif %}
+  {% endif %}
 {%endblock%}
