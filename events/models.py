@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.core.validators import MinLengthValidator
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -33,7 +34,11 @@ class Comment(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=80)
     email = models.EmailField()
-    body = models.TextField()
+    body = models.TextField(
+        validators=[
+            MinLengthValidator(50, 'the field must contain at least 50 characters')
+            ]
+        )
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 

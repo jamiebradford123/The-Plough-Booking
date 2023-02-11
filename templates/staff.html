@@ -4,51 +4,38 @@
 {% load crispy_forms_tags %}
 
 {% if request.user.is_authenticated %} {% if request.user.is_staff %}
-<h1>All Bookings</h1>
-<table class="table table_id pt-5 text-center">
-     <thead>
 
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Date</th>
-        <th scope="col">Time</th>
-        <th scope="col">Number of People</th>
-        <th scope="col">Requests</th>
-        <th scope="col">Approved</th>
-        <th scope="col"></th>
+<div class="card-group">
+  <div class="card">
+      <a class="nav-link active" aria-current="page" href="{}">
+    <img src="https://billetto.co.uk/blog/wp-content/uploads/2020/03/victor-clime-0L-IgR1-3fE-unsplash-1024x683.jpg" class="card-img-top" alt="event image">
+    <div class="card-body">
+      <h5 class="card-title">Manage Events</h5>
+    </div>
+  </a>
+  </div>
+  <div class="card">
+      <a class="nav-link active" aria-current="page" href="{}">
+    <img src="https://i.etsystatic.com/11154166/r/il/fadea7/1948539947/il_fullxfull.1948539947_ey9l.jpg" class="card-img-top" alt="menu">
+    <div class="card-body">
+      <h5 class="card-title">Manage comments</h5>
+    </div>
+  </a>
+  </div>
+  <div class="card">
+      <a class="nav-link active" aria-current="page" href="{% url 'managebookings' %}">
+    <img src="https://images.squarespace-cdn.com/content/v1/58c66929d1758e424e0341b6/1650618178048-O22DEXXAANY9MOUP664I/The+Akeman+Tring+restaurant+menu.jpg?format=2500w" class="card-img-top" alt="table with food">
+    <div class="card-body">
+      <h5 class="card-title">Manage Bookings</h5>
+    </div>
+      </a>
+  </div>
+</div>
 
-      </tr>
-    </thead>
-    <tbody>
-      {% for book in booking %}
-      <tr>
-        <td data-label="Name">{{ book.name }}</td>
-        <td data-label="Date">{{ book.date }}</td>
-        <td data-label="Time">{{ book.time }}</td>
-        <td data-label="Guests">{{ book.number_of_guests }}</td>
-        <td data-label="Requests">{{ book.requests }}</td>
-        <td data-label="Approved">
-          {% if book.approved == True %} 
-          <i class="fas fa-check green-text"></i> 
-          {% else %} <span class="red-text">X</span></td>
-          {% endif %}
-        <td data-label="Button">
-          <a href="edit/{{ book.id }}">
-              <button>Edit</button>
-          </a>
-          <a href="toggle/{{ book.id }}">
-              <button>Toggle</button>
-          </a>
-          <a href="delete/{{ book.id }}">
-            <button>Delete</button>
-        </a>
-        </td>
-        {% endfor %}
-        
-    </tbody>
-  </table>
+
+
   {% else %}
-  <h1>hi</h1>
+  <h1>Not Authorised</h1>
   {% endif %}
   {% endif %}
 {%endblock%}

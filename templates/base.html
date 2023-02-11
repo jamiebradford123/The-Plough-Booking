@@ -45,9 +45,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'menu' %}">Menu's</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'event' %}">Events</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'book' %}">Book</a>
                     </li>
@@ -57,7 +57,7 @@
                     </li>
                    {% if request.user.is_staff %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'staff' %}">Staff</a>
+                        <a class="nav-link" href="{% url 'managebookings' %}">Staff</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
