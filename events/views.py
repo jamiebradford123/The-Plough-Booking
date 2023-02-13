@@ -7,7 +7,7 @@ from .forms import CommentForm, EventForm
 
 class EventList(generic.ListView):
     model = Event
-    queryset = Event.objects.order_by('created_on')
+    queryset = Event.objects.order_by('event_date')
     template_name = 'event.html'
     paginate_by = 6
 
@@ -87,7 +87,7 @@ def add_event(request):
 
         if event_form.is_valid():
             event_form.save()
-            return render(request,"success.html")
+            return render(request,"event_success.html")
 
         else:       
             return render(request,"fail.html")

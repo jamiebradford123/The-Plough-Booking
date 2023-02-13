@@ -27,7 +27,6 @@ def edit_book(request, book_id):
     context = {
         'book_form': book_form
     }
-    
     return render(request, 'edit.html', context)
 
 
@@ -35,13 +34,14 @@ def toggle_book(request, book_id):
     book = get_object_or_404(Book, id=book_id)
     book.approved = not book.approved
     book.save()
-    return redirect('staff')
+    return redirect('managebookings')
 
 
 def delete_book(request, book_id):
     book = get_object_or_404(Book, id=book_id)
     book.delete()
-    return redirect('staff')
+    return redirect('managebookings')
+
 
 def manage_events(request):
     events = Event.objects.order_by('date')
@@ -49,6 +49,7 @@ def manage_events(request):
         "events": events,
     }
     return render(request, "manage_events.html", context)
+
 
 def customer(request):
     return render(request, "customer.html")
