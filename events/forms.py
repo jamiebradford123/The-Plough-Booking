@@ -8,15 +8,16 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ('body',)
 
+
 class DateInput(forms.DateInput):
     input_type = "date"
+
 
 class EventForm(forms.ModelForm):
     class Meta:
         model = Event
         fields = [
             'title',
-            'slug',
             'event_date',
             'time',
             'content',

@@ -8,7 +8,6 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Event(models.Model):
     title = models.CharField(max_length=150, unique=True)
-    slug = models.SlugField(max_length=150, unique=True)
     event_date = models.DateTimeField()
     time = models.TimeField(null=True)
     updated_on = models.DateTimeField(auto_now=True)
@@ -17,16 +16,12 @@ class Event(models.Model):
     price = models.IntegerField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    interested = models.ManyToManyField(User, related_name='event_interested', blank=True)
 
     class Meta:
         ordering = ['-event_date']
 
     def __str__(self):
         return self.title
-
-    def number_interested(self):
-        return self.interested.count()
 
 # Taken from CI Blog app tutorial
 
