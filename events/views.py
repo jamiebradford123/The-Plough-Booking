@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Event
-from .forms import CommentForm, EventForm
+from .forms import EventForm
 
 
 class EventList(generic.ListView):
@@ -40,7 +40,7 @@ def edit_event(request, event_id):
     context = {
         'form': form
     }
-    return render(request, 'event.html', context)
+    return render(request, 'edit_event.html', context)
 
 
 def delete_event(request, event_id):

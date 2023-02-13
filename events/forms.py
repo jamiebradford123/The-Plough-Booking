@@ -1,12 +1,6 @@
-from .models import Comment, Event
+from .models import Event
 from django import forms 
 from datetime import date, datetime
-
-
-class CommentForm(forms.ModelForm):
-    class Meta:
-        model = Comment
-        fields = ('body',)
 
 
 class DateInput(forms.DateInput):

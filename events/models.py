@@ -23,23 +23,3 @@ class Event(models.Model):
     def __str__(self):
         return self.title
 
-# Taken from CI Blog app tutorial
-
-
-class Comment(models.Model):
-    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name="comments")
-    name = models.CharField(max_length=80)
-    email = models.EmailField()
-    body = models.TextField(
-        validators=[
-            MinLengthValidator(50, 'the field must contain at least 50 characters')
-            ]
-        )
-    created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
-
-    class Meta:
-        ordering = ["created_on"]
-
-    def __str__(self):
-        return f"Comment {self.body} by {self.name}"
