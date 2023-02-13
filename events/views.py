@@ -2,12 +2,12 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Event
-from .forms import CommentForm
+from .forms import CommentForm, EventForm
 
 
 class EventList(generic.ListView):
     model = Event
-    queryset = Event.objects.filter(status=1).order_by('created_on')
+    queryset = Event.objects.order_by('created_on')
     template_name = 'event.html'
     paginate_by = 6
 
@@ -77,3 +77,26 @@ class EventInterested(View):
             event.interested.add(request.user)
 
         return HttpResponseRedirect(reverse('event_detail', args=[slug]))
+
+
+
+def add_event(request):
+
+    if request.method=="POST":
+        event_form = EventForm(request.POST)
+
+        if event_form.is_valid():
+            event_form.save()
+            return render(request,"success.html")
+
+        else:       
+            return render(request,"fail.html")
+    else:
+        event_form = EventForm()
+    return render(
+        request,
+        "add_event.html",
+        {
+            "event_form": event_form,
+        }
+    )

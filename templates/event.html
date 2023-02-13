@@ -2,19 +2,24 @@
 
 
 {% block content %}
+<div class="container">
+    <div class="row">
+        <h1 class="display-1 d-flex justify-content-center">Events</h1>
 
-  </header>
-        <!-- Event Entries Column -->
-        <div class="container">
-            <div class="row">
-                <h1 class="display-1 d-flex justify-content-center">Events</h1>
-            {% for event in event_list %}
-            <div class="col-lg-6 col-md-10 d-flex justify-content-center mb-10">
-                <div class="card event mb-12">
-                    <div class="card-body">
-                        <a href="{% url 'event_detail' event.slug %}" class="event-link">
-                        <div class="image-container">
-                            {% if "placeholder" in event.featured_image.url %}
+        {% if request.user.is_authenticated %} {% if request.user.is_staff %}
+        <p>
+        <a href="{% url 'add_event' %}">
+            <button class="btn btn-primary">Add event</button>
+        </a>
+        </p>
+
+        {% endif %}
+        {% endif %}
+
+        {% for event in event_list %}
+        <div class="card mb-3">
+            <a href="{% url 'event_detail' event.slug %}" class="event-link">
+                {% if "placeholder" in event.featured_image.url %}
                             <img class="card-img-top" 
                             src="https://media-cdn.tripadvisor.com/media/photo-s/0b/fc/88/6b/traditional-village-pub.jpg" 
                             alt="picture of the plough">
@@ -22,25 +27,16 @@
                             <img class="card-img-top" src="{{ event.featured_image.url }}" 
                             alt="image related to the event">
                             {% endif %}
-                            <div class="image-flash">
-                                <p class="date">Date: {{ event.event_date }}</p>
-                            </div>
-                        </div>
-                            <h2 class="card-title">{{ event.title }}</h2>
-                            <p class="card-text">Price £{{ event.price }}</p>
-                        </a>
-                        <hr/>
-                        <p class="card-text texed-muted h6">Created on: {{ event.created_on }}
-                            <i class="far fa-thumbs-up"></i>{{ event.number_interested }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-                {% endfor %}
+            <div class="card-body">
+                <h2 class="card-title">{{ event.title }}</h2>
+            <p class="card-text">Date: {{ event.event_date }}</p>
+            <p class="card-text">Price £{{ event.price }}</p>
+            <p class="card-text"><small class="text-muted">Created on: {{ event.created_on }}
+                <i class="far fa-thumbs-up"></i>{{ event.number_interested }}</small></p>
             </div>
         </div>
-    </div>
+        {% endfor %}
+
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">

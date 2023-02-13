@@ -10,6 +10,7 @@ class Event(models.Model):
     title = models.CharField(max_length=150, unique=True)
     slug = models.SlugField(max_length=150, unique=True)
     event_date = models.DateTimeField()
+    time = models.TimeField(null=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     featured_image = CloudinaryField('image', default='placeholder')
