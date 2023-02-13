@@ -25,12 +25,6 @@ def book(request):
         }
     )
 
-def manage_bookings(request):
-    booking = Book.objects.order_by('date')
-    context = {
-        "booking": booking,
-    }
-    return render(request, "manage_bookings.html", context)
 
 def manage_bookings(request):
     booking = Book.objects.order_by('date')

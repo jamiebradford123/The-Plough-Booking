@@ -36,9 +36,15 @@ def add_event(request):
 
 def edit_event(request, event_id):
     event = get_object_or_404(Event, id=event_id)
-    form = EventForm(instance=event)
+    if request.method == "POST":
+        event_form = EventForm(request.POST, instance=event)
+
+        if event_form.is_valid():
+            event_form.save()
+            return render(request, "bookeditsuccess.html")
+    event_form = EventForm(instance=event)
     context = {
-        'form': form
+        'event_form': event_form
     }
     return render(request, 'edit_event.html', context)
 
