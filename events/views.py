@@ -36,11 +36,11 @@ def add_event(request):
 
 def edit_event(request, event_id):
     event = get_object_or_404(Event, id=event_id)
-    eventform = EventForm(instance=event)
+    form = EventForm(instance=event)
     context = {
-        'eventform': eventform
+        'form': form
     }
-    return render(request, 'edit_event.html')
+    return render(request, 'edit_event.html', context)
 
 
 def toggle_book(request, book_id):

@@ -11,7 +11,7 @@
 {% if user.is_authenticated %}
     <div class="col-md-8 mt-3 offset-md-2">
 <form method="post" style="margin-top: 1.3em;">
-    {{ event_form | crispy }}
+    {{ form | crispy }}
     {% csrf_token %}
     <button type="submit" class="btn btn-signup btn-lg mt-2 mb-2">Update</button>
 </form>
