@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Event
@@ -40,17 +40,10 @@ def edit_event(request, event_id):
     context = {
         'form': form
     }
-    return render(request, 'edit_event.html', context)
+    return render(request, 'event.html', context)
 
 
-def toggle_book(request, book_id):
-    book = get_object_or_404(Book, id=book_id)
-    book.approved = not book.approved
-    book.save()
-    return redirect('managebookings')
-
-
-def delete_book(request, book_id):
-    book = get_object_or_404(Book, id=book_id)
-    book.delete()
-    return redirect('managebookings')
+def delete_event(request, event_id):
+    event = get_object_or_404(Event, id=event_id)
+    event.delete()
+    return redirect('event')

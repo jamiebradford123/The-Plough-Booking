@@ -32,14 +32,15 @@
             <p class="card-text">{{ event.content }}</p>
             <p class="card-text">Price £{{ event.price }}</p>
             <p class="card-text"><small class="text-muted">Created on: {{ event.created_on }}
-                <i class="far fa-thumbs-up"></i>{{ event.number_interested }}</small></p>
                 {% if request.user.is_authenticated %} {% if request.user.is_staff %}
+                <p>
                 <a href="edit_event/{{ event.id }}">
                     <button>edit</button>
                 </a>
-                <a href="">
+                <a href="delete/{{ event.id }}">
                     <button>delete</button>
                 </a>
+                </p>
                 {% endif %}
                 {% endif %}
             </div>
