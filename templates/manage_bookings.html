@@ -17,6 +17,7 @@
         <th scope="col">Time</th>
         <th scope="col">Number of People</th>
         <th scope="col">Requests</th>
+        <th scope="col">Email</th>
         <th scope="col">Approved</th>
         <th scope="col"></th>
 
@@ -30,6 +31,7 @@
         <td data-label="Time">{{ book.time }}</td>
         <td data-label="Guests">{{ book.number_of_guests }}</td>
         <td data-label="Requests">{{ book.requests }}</td>
+        <td data-label="Requests">{{ book.email }}</td>
         <td data-label="Approved">
           {% if book.approved == True %} 
           <i class="fas fa-check green-text"></i> 

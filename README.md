@@ -86,95 +86,130 @@ I decided to go for darker greys and white color scheme, as it matches the image
 
 Playfair display was used as it most reflected the real world logo of The Plough. As for the other fonts, I ensured they matched the style of the website and they are clear and easy to read. Roboto Slab was used on the main page as it is bolder and larger, which will draw attention to it
 
-ADD FONT IMAGES
-
 ### Imagery
 
 The images used on this site are meant to be images of the pub itself. As this is an example project, real images are not available, therefore images that closely reflect the Plough pub have been used. On the menu page, the images used are to show some of the products related to said menu that the Plough sell. 
 
 ### Wireframes
 
-![Responsice Mockup](media/images/preview_3.png)
+Mobile view
+![Mobile View](media/images/Wireframe%20mobile.png)
+Booking page
+![Booking Page](media/images/Wireframe_booking.png)
+Events page
+![Events Page](media/images/wireframe_event.png)
+Home page
+![Home Page](media/images/Wireframe_home.png)
+Menu Page
+![Menu Page](media/images/Wireframe_menus.png)
 
 
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
+This website has several pages and some of these are viewable or appear differently depending on a) the user is logged in or b)if the user is logged in as a customer or c) the user is signed in as an admin/ member of staff. 
 
-This section can be used to explain what pages your site is made up of.
+All pages use the base html, which contains a responsive navigation bar allowing users to get around the site. The Plough Logi is always on the top right, and also acts as a button to take the users back to the home page. If the user is not signed in, the nav bar contains a "Register" and a "Log In" button. If a customer is signed in, this will change to just a "Log out" button. If an admin/ staff member is logged in, an additional "Staff" button will appear on the nav bar which will take them to the staff home page. 
 
-### General features on each page
+All pages also contain the same footer, which has all the contact information of the pub, as well as the address and the social media links. 
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+# Home Page
+- Large masthead with a background image of the Plough with a button which can take users straight to the booking page
+- 3 cards underneath each with relevant images to what they are related to
+  - Reservation card
+  - Menu's card
+  - Book now card
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+# Menu page
+- Contains 3 cards that the users can click on to see the different menus. A breakfast menu, a main menu and a drinks menu
+
+# Events page
+- As a customer user or a user that has not logged in, this page shows all the different events that will be happening at the Plough. Each event has a relevant image, date, time, information and the price. 
+
+- If logged in as an admin, a button at the top of the page will be visable allowing the user to add an event. Clicking this button takes the user to the add events page, where the user can fill out the form. 
+
+# Booking page
+- Allows users to make a reservation. This page contains a form which users can fill out, and the restaurant can approve, edit or delete these bookings. The restaurant will email the customer to comfirm their booking. 
+- Only users that are logged in can access this page, if they are not logged in, they will be asked to log in. 
+
+# Staff page
+- Only accessable to staff users. This page allows the user to see all bookings, ordered by date. Here, users can edit, approve and delete bookings.
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+- Fuctionality for users to view their own bookings, edit and cancel them
+- Email functionality for booking confirmations to be sent automatically when approved, or when changes have been made
+- Automatically approve bookings, and decline when certain criteria has been made such as duplicate booking, or too many bookings on the same day/time. 
+- Forgot password and change password functionality
+- Allow social media log in 
+- Allow admin to edit users, delete users, create new staff users
+- Automatic testing
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
-
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+- Used semantic HTML
+- Distinct color differences so all text is easy to read
+- Using descriptive alt attributes on images on the site.
+- Providing information for screen readers where there are icons used and no text 
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
-
-### Languages Used
-
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
-
-### Frameworks, Libraries & Programs Used
-
-Add any frameworks, libraries or programs used while creating your project.
-
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
-
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
-
-## Deployment & Local Development
-
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
-
-### Deployment
-
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
-
-### Local Development
-
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
-#### How to Fork
-
-Place instructions on how to fork your project here.
-
-#### How to Clone
-
-Place instructions on how to clone your project here.
+- HTML5 - Provides the content and structure for the website.
+- CSS - Provides the styling for the website.
+- Django - A model-view-template framework used to create The Plough
+- Bootstrap - Used to style the front end
+- JavaScript - Creates the interactive aspects of the website
+- Python - Provides the functionality of the website.
+- Compressor - Used to compress the images.
+- Am I Responsive? - To show the website image on a range of devices.
+- GitHub - Used to host and deploy the website.
+- Gitpod - Used to create the code for the site
+- Google Chrome DevTools - Used to test responsiveness and debug.
+- Balsamiq - Used to create the wire-frame.
+- Cloudinary - Used to host all static files .
+- Heroku - Used to deploy the website
+- Google Fonts - To import the fonts used on the website.
+- Font Awesome - For the iconography on the website.
+- PEP8 Validation - Used to validate Python code
+- HTML Validation - Used to validate HTML code
+- CSS Validation - Used to validate CSS code
+- JSHint Validation - Used to validate JavaScript code
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamiebradford123.github.io%2FThe-Plough-Booking%2F)
+    
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](/media/images/jigsaw-css.png)
+- JavaScript
+    - No errors were found when passing through the official [Jshint validator]()
+      - The following metrics were returned: 
+      - There are 7 functions in this file.
+      - Function with the largest signature take 1 arguments, while the median is 1.
+      - Largest function has 12 statements in it, while the median is 2.
+      - The most complex function has a cyclomatic complexity value of 4 while the median is 1.
 
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+# Testing user stories
+
+# Lighthouse testing
+Home Page
+![Lighthouse home](media/images/lighthouse-main.png)
+Menu Page
+![Lighthouse menu](media/images/lighthouse-menu.png)
+Events Page
+![Lighthouse event](media/images/lighthouse-events.png)
+Booking Page
+![Lighthouse book](media/images/lighthouse-book.png)
+Staff Page
+![Lighthouse staff](media/images/lighthouse-staff.png)
+# Manual Testing
+
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-
-The Credits section is where you can credit all the people and sources you used throughout your project.
+- Readme template - https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website
+- CI Tutorial projects - Hello Django and I Think I Blog for inspiration and a basis to build on 
 
 ### Code Used
 

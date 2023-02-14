@@ -26,7 +26,7 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url('https://thealchemist.uk.com/wp-content/uploads/2016/06/Dining-Area-15-1400x934.jpg');
+    background-image: url('/media/images/masthead-min.jpeg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -42,15 +42,15 @@ header.masthead.menu {
 }
 
 header.masthead.menu.breakfast {
-    background-image: url('https://recipes.net/wp-content/uploads/2021/11/best-american-breakfast-foods.jpg');
+    background-image: url('/media/images/breakfast-detail-min.jpeg');
 }
 
 header.masthead.menu.main {
-    background-image: url('https://images.immediate.co.uk/production/volatile/sites/2/2019/10/134_Roma_9780451497017_art_r1-facac84.jpg?quality=90&resize=700,466');
+    background-image: url('/media/images/main-detail-min.jpeg');
 }
 
 header.masthead.menu.drinks {
-    background-image: url('https://www.tastingtable.com/img/gallery/20-best-wine-brands-ranked/l-intro-1655749840.jpg');
+    background-image: url('/media/images/drink-detail-min.jpeg');
 }
 
 
