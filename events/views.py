@@ -14,15 +14,15 @@ class EventList(generic.ListView):
 
 def add_event(request):
 
-    if request.method=="POST":
-        event_form = EventForm(request.POST)
+    if request.method == "POST":
+        event_form = EventForm(request.POST, request.FILES)
 
         if event_form.is_valid():
             event_form.save()
-            return render(request,"event_success.html")
+            return render(request, "event_success.html")
 
-        else:       
-            return render(request,"fail.html")
+        else:
+            return render(request, "fail.html")
     else:
         event_form = EventForm()
     return render(
@@ -37,7 +37,7 @@ def add_event(request):
 def edit_event(request, event_id):
     event = get_object_or_404(Event, id=event_id)
     if request.method == "POST":
-        event_form = EventForm(request.POST, instance=event)
+        event_form = EventForm(request.POST, request.FILES, instance=event)
 
         if event_form.is_valid():
             event_form.save()

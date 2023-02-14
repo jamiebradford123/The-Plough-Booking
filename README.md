@@ -1,17 +1,17 @@
 # The Plough Pub
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
+![Responsice Mockup](media/images/preview.png)
+![Responsice Mockup](media/images/preview_2.png)
+![Responsice Mockup](media/images/preview_3.png)
 
 The Plough Website is designed to be a responsive website on a range of devices such as a mobile and laptop. This site allows visitors to find out more information about The Plough
 Pub and let them make a reservation if they wish. I build this website as this is a local business I attend reguarlly, but they lack an online presence. With this website it should
 allow people to find out more about the business and make a reservation, as many people do not visit places without the guarentee of a seat.
 
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+## Link to Live site here:
+https://the-plough.herokuapp.com/event
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
-
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
 
 ---
 
@@ -61,28 +61,24 @@ Having an online presence will help boost this businesses returns, as it will re
 - To recieve bookings from customers 
 - To be able to accept, edit and cancel bookings
 - To be able to display the pubs menu's to viewers
+- To be able to add, edit and delete events
 
 # First time visitor goals
 - To be able to gain more information about the pub (address, contact information etc)
 - To be able to make a booking for the pub
-- To be able to edit and cancel their bookings
+- To be able to view the latest events happening at the pub
 
 # Returning visitor goals
-- Can edit and cancel previous bookings
+- See the latest events 
 - To book a table again
 
-# Frequent visitors
-- View previous and current bookings and edit and cancel them
-
 ## Design
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
 ### Colour Scheme
 
+![Colors](media/images/colors.png)
+
 I decided to go for darker greys and white color scheme, as it matches the images I would be using. It also gives a more classier feel which matches the pub itself, and I want users to feel this is a fancy establishement.
-
-
-ADD COLOR PALLETE 
 
 ### Typography
 
@@ -92,16 +88,14 @@ Playfair display was used as it most reflected the real world logo of The Plough
 
 ADD FONT IMAGES
 
-
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
-
 ### Imagery
 
 The images used on this site are meant to be images of the pub itself. As this is an example project, real images are not available, therefore images that closely reflect the Plough pub have been used. On the menu page, the images used are to show some of the products related to said menu that the Plough sell. 
 
 ### Wireframes
 
-Add the images or links for your wireframes here.
+![Responsice Mockup](media/images/preview_3.png)
+
 
 
 ## Features
