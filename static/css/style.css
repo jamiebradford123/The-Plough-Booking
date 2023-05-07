@@ -43,15 +43,15 @@ header.masthead.menu {
 }
 
 header.masthead.menu.breakfast {
-    background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/11AA1/production/_126635327_gettyimages-938158500.jpg');
+    background-image: url('https://res.cloudinary.com/dcmdyoyxi/image/upload/v1683465849/plough-breakfast-min_vhuos1.jpg');
 }
 
 header.masthead.menu.main {
-    background-image: url('https://foolproofliving.com/wp-content/uploads/2020/05/Easy-Dinner-Recipes.jpg');
+    background-image: url('https://res.cloudinary.com/dcmdyoyxi/image/upload/v1683465848/plough-main-min_ahj0bo.jpg');
 }
 
 header.masthead.menu.drinks {
-    background-image: url('https://www.beefeater.co.uk/en-gb/autumn-winter-2022/beefeater_autumn_winter_8_32.png');
+    background-image: url('https://res.cloudinary.com/dcmdyoyxi/image/upload/v1683465849/plough_drinks-min_k7mcin.png');
 }
 
 
