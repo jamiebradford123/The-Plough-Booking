@@ -307,7 +307,26 @@ Who wrote the content for the website? Was it yourself - or have you made the si
 
 ###  Media
 
-* ALL IMAGES COMPRESSED SAVING X AMOUNT
+All images were compressed using Optimizilla - https://imagecompressor.com/
+
+All images are stored on Cloudinary - https://cloudinary.com/
+
+Image sources
+- Home page
+    - Masthead - https: //res.cloudinary.com/dcmdyoyxi/image/upload/v1683464637/plough-homepage_gxlubk.webp
+    - Event - https://billetto.co.uk/blog/wp-content/uploads/2020/03/victor-clime-0L-IgR1-3fE-unsplash-1024x683.jpg
+    - Menu - https://i.etsystatic.com/11154166/r/il/fadea7/1948539947/il_fullxfull.1948539947_ey9l.jpg
+    - Reserve a table - https://images.squarespace-cdn.com/content/v1/58c66929d1758e424e0341b6/1650618178048-O22DEXXAANY9MOUP664I/The+Akeman+Tring+restaurant+menu.jpg?format=2500w
+- Menu page
+    - Breakfast - https://www.egginfo.co.uk/sites/default/files/styles/large_main_image/public/2018/04/half%20english_charlie%20richards%20resized.jpg?h=9ef2d775&itok=6zYCw6LN
+    - Breakfast page - https://ichef.bbci.co.uk/news/976/cpsprodpb/11AA1/production/_126635327_gettyimages-938158500.jpg
+    - Main - https://res.cloudinary.com/dcmdyoyxi/image/upload/v1683464495/dinner_smyrkl.jpg
+    - Main page - https://foolproofliving.com/wp-content/uploads/2020/05/Easy-Dinner-Recipes.jpg
+    - Drinks - https://www.whitbreadinns.co.uk/en-gb/autumn-winter-2022/whitbread_inns_aw_drinks_2_32.png
+    - Drinks page - https://www.beefeater.co.uk/en-gb/autumn-winter-2022/beefeater_autumn_winter_8_32.png
+- Events page - All images uploaded by user and stored on cloudinary
+
+
   
 ###  Acknowledgments
 

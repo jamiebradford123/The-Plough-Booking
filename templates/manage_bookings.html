@@ -8,52 +8,53 @@
 <div class="container-fluid">
     <div class="row">
         <h1 class="display-1 d-flex justify-content-center">All Bookings</h1>
-<table class="table table_id pt-5 text-center">
-     <thead>
+        <table class="table table_id pt-5 text-center">
+            <thead>
 
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Date</th>
-        <th scope="col">Time</th>
-        <th scope="col">Number of People</th>
-        <th scope="col">Requests</th>
-        <th scope="col">Email</th>
-        <th scope="col">Approved</th>
-        <th scope="col"></th>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Number of People</th>
+                    <th scope="col">Requests</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Approved</th>
+                    <th scope="col"></th>
 
-      </tr>
-    </thead>
-    <tbody>
-      {% for book in booking %}
-      <tr>
-        <td data-label="Name">{{ book.name }}</td>
-        <td data-label="Date">{{ book.date }}</td>
-        <td data-label="Time">{{ book.time }}</td>
-        <td data-label="Guests">{{ book.number_of_guests }}</td>
-        <td data-label="Requests">{{ book.requests }}</td>
-        <td data-label="Requests">{{ book.email }}</td>
-        <td data-label="Approved">
-          {% if book.approved == True %} 
-          <i class="fas fa-check green-text"></i> 
-          {% else %} <span class="red-text">X</span></td>
-          {% endif %}
-        <td data-label="Button">
-          <a href="edit/{{ book.id }}">
-              <button>Edit</button>
-          </a>
-          <a href="toggle/{{ book.id }}">
-              <button>Approve</button>
-          </a>
-          <a href="delete/{{ book.id }}">
-            <button>Delete</button>
-          </a>
-        </td>
-        {% endfor %}
-        
-    </tbody>
-  </table>
-  {% else %}
-  <h1>Not Authorised</h1>
-  {% endif %}
-  {% endif %}
-{%endblock%}
+                </tr>
+            </thead>
+            <tbody>
+                {% for book in booking %}
+                <tr>
+                    <td data-label="Name">{{ book.name }}</td>
+                    <td data-label="Date">{{ book.date }}</td>
+                    <td data-label="Time">{{ book.time }}</td>
+                    <td data-label="Guests">{{ book.number_of_guests }}</td>
+                    <td data-label="Requests">{{ book.requests }}</td>
+                    <td data-label="Requests">{{ book.email }}</td>
+                    <td data-label="Approved">
+                        {% if book.approved == True %}
+                        <i class="fas fa-check green-text"></i>
+                        {% else %} <span class="red-text">X</span>
+                    </td>
+                    {% endif %}
+                    <td data-label="Button">
+                        <a href="edit/{{ book.id }}">
+                            <button>Edit</button>
+                        </a>
+                        <a href="toggle/{{ book.id }}">
+                            <button>Approve</button>
+                        </a>
+                        <a href="delete/{{ book.id }}">
+                            <button>Delete</button>
+                        </a>
+                    </td>
+                    {% endfor %}
+
+            </tbody>
+        </table>
+        {% else %}
+        <h1>Not Authorised</h1>
+        {% endif %}
+        {% endif %}
+        {%endblock%}

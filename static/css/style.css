@@ -21,12 +21,13 @@ h3 {
 h6 {
     padding-left: 30px;
 }
+
 header.masthead {
     padding-top: 20.5rem;
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url('https://thealchemist.uk.com/wp-content/uploads/2016/06/Dining-Area-15-1400x934.jpg');
+    background-image: url('https: //res.cloudinary.com/dcmdyoyxi/image/upload/v1683464637/plough-homepage_gxlubk.webp');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -60,14 +61,15 @@ header.masthead .masthead-subheading {
     line-height: 1.5rem;
     margin-bottom: 25px;
     font-family: 'Roboto Slab', serif;
-  }
-  header.masthead .masthead-heading {
+}
+
+header.masthead .masthead-heading {
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 3.25rem;
     margin-bottom: 1rem;
     font-family: "Montserrat", sans-serif;
-  }
+}
 
 .card-group {
     margin-top: 50px;
@@ -107,7 +109,7 @@ header.masthead .masthead-subheading {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color:rgb(62, 17, 47);
+    background-color: rgb(62, 17, 47);
 }
 
 .date {
@@ -209,19 +211,20 @@ footer a {
     color: white;
 }
 
-a, u {
+a,
+u {
     text-decoration: none;
-  }
+}
 
-.price{
+.price {
     padding: 16px;
 }
 
-.drinks{
+.drinks {
     padding: 6px;
 }
 
-.fab{
+.fab {
     font-size: 50px;
     padding-left: 10px;
     padding-right: 10px;
@@ -239,12 +242,16 @@ p.post-subtitle {
 .green-text {
     color: green;
 }
+
 .red-text {
     color: red;
 }
 
-@media (min-width: 1000px) { 
-    .card, mb-3, menu-card{
+@media (min-width: 1000px) {
+
+    .card,
+    mb-3,
+    menu-card {
         border-top-left-radius: calc(0.25rem - 1px);
         border-top-right-radius: calc(0.25rem - 1px);
         max-height: 60%;
@@ -252,13 +259,15 @@ p.post-subtitle {
         margin-left: auto;
         margin-right: auto;
     }
+
     .card-body {
         padding-left: 0;
         padding-right: 0;
     }
 }
+
 @media (max-width: 500px) {
-    .fab{
+    .fab {
         padding-left: 0px;
         padding-right: 0px;
     }
