@@ -24,5 +24,8 @@
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
 "editor.defaultFormatter": "HookyQR.beautify",
-"python.formatting.provider": "black"
+"python.formatting.provider": "black",
+"[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
 }
