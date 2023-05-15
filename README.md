@@ -99,42 +99,64 @@ The images used on this site are meant to be images of the pub itself. As this i
 
 ## Wireframes
 
-- Home page
+<details>
+<summary>Home page</summary>
+- Desktop View
+  
+![Desktop View](media/images/Wireframe_home.png)
 
-  - Desktop view
-  - Mobile view
+- Mobile view
 
-- Events page
+![Mobile View](media/images/Wireframe-home-mobile.png)
 
-  - Desktop view
-  - Mobile view
+</details>
 
-- Menu's page
+<details>
+<summary>Events page</summary>
+- Desktop View
+  
+![Desktop View](media/images/wireframe_event.png)
 
-- Booking page
+</details>
 
-  - Desktop view
-  - Mobile view
+<details>
+<summary>Menu's page</summary>
+- Desktop View
+  
+![Desktop View](media/images/Wireframe_menus.png)
 
-- Log in page
+- Mobile view
+![Mobile View]()
+</details>
 
-  - Desktop view
-  - Mobile view
+<details>
+<summary>Booking page</summary>
+- Desktop View 
+  
+![Desktop View](media/images/Wireframe_booking.png)
+- Mobile view
+![Mobile View]()
+</details>
 
-- Admin page
-  - Desktop view
-  - Mobile view
+<details>
+<summary>Log in page</summary>
+- Desktop View 
+  
+![Desktop View]()
+- Mobile view
+![Mobile View]()
+</details>
 
-Mobile view
-![Mobile View](media/images/Wireframe%20mobile.png)
-Booking page
-![Booking Page](media/images/Wireframe_booking.png)
-Events page
-![Events Page](media/images/wireframe_event.png)
-Home page
-![Home Page](media/images/Wireframe_home.png)
-Menu Page
-![Menu Page](media/images/Wireframe_menus.png)
+<details>
+<summary>Admin/ Staff page</summary>
+- Desktop View
+  
+![Desktop View]()
+
+- Mobile view
+  ![Mobile View]()
+
+</details>
 
 # Database models
 
