@@ -1,8 +1,8 @@
 from .models import Event
 from django import forms
-
+from django.utils import timezone
 # from datetime import date, datetime
-import datetime
+# from datetime import date
 
 
 class DateInput(forms.DateInput):
@@ -25,8 +25,15 @@ class EventForm(forms.ModelForm):
             "time": forms.TimeInput(attrs={"type": "time"}),
         }
 
-    def clean_date(self):
-        event_date = self.cleaned_data["event_date"]
-        if event_date < datetime.date.today():
-            raise forms.ValidationError("The date cannot be in the past!")
-        return event_date
+    # def clean_date(self):
+    #     event_date = self.cleaned_data["event_date"]
+    #     if event_date < date.today():
+    #         raise forms.ValidationError("The date cannot be in the past!")
+    #     return event_date
+
+
+    def clean_event_date(self):
+        date = self.cleaned_data.get('event_date')
+        if date and date < timezone.now().date():
+            raise forms.ValidationError("Please select a future date.")
+        return date
