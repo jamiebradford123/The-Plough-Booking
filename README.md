@@ -113,7 +113,7 @@ The images used on this site are meant to be images of the pub itself. As this i
 
 <details>
 <summary>Events page</summary>
-- Desktop View
+- Desktop + Mobile View
   
 ![Desktop View](media/images/wireframe_event.png)
 
@@ -121,21 +121,25 @@ The images used on this site are meant to be images of the pub itself. As this i
 
 <details>
 <summary>Menu's page</summary>
-- Desktop View
+- Desktop View + Mobile View
   
 ![Desktop View](media/images/Wireframe_menus.png)
 
-- Mobile view
-![Mobile View]()
+</details>
+<details>
+<summary>Menu's Detail page (Breakfast, Main, Drinks)</summary>
+- Desktop View + Mobile View
+  
+![Desktop View]()
+
 </details>
 
 <details>
 <summary>Booking page</summary>
-- Desktop View 
+- Desktop View + Mobile view
   
 ![Desktop View](media/images/Wireframe_booking.png)
-- Mobile view
-![Mobile View]()
+
 </details>
 
 <details>
@@ -143,8 +147,7 @@ The images used on this site are meant to be images of the pub itself. As this i
 - Desktop View 
   
 ![Desktop View]()
-- Mobile view
-![Mobile View]()
+
 </details>
 
 <details>
@@ -152,10 +155,6 @@ The images used on this site are meant to be images of the pub itself. As this i
 - Desktop View
   
 ![Desktop View]()
-
-- Mobile view
-  ![Mobile View]()
-
 </details>
 
 # Database models
