@@ -130,7 +130,7 @@ The images used on this site are meant to be images of the pub itself. As this i
 <summary>Menu's Detail page (Breakfast, Main, Drinks)</summary>
 - Desktop View + Mobile View
   
-![Desktop View]()
+![Desktop View](media/images/Wireframe-menu-detail.png)
 
 </details>
 
