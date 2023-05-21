@@ -51,9 +51,9 @@ This website will display events they are hosting, their menus, allow users to m
 
 # User Experience
 
-The Plough website allows users and staff to do multiple things. Firstly, both will be able to make, edit or cancel a reservation through a booking system. Users will also be able to view, like and comment on events that will be occuring at the pub. Staff memebers will be able to upload new events.
+The Plough website allows users and staff to do multiple things. Firstly, users will be able to make, reservations which can then be edited or cancelled by staff through a booking system. Staff can also create events, and the users cn see what events that will be occuring at the pub.
 
-Having an online presence will help boost this businesses returns, as it will reach a wider audience who will be able to see what food, drink and events the Plough offers. First time users and especially those that have never visited the establishment may discover something that interests them and encourage them to book and visit the Pub. Returning members can keep visiting to see the latest events and edit/cancel or make another booking.
+Having an online presence will help boost this businesses returns, as it will reach a wider audience who will be able to see what food, drink and events the Plough offers. First time users and especially those that have never visited the establishment may discover something that interests them and encourage them to book and visit the Pub. Returning members can keep visiting to see the latest events and book again
 
 ## Client goals
 
@@ -74,10 +74,8 @@ Having an online presence will help boost this businesses returns, as it will re
 
 ## Returning visitor goals
 
-- See the latest events
-
+* See the latest events
 * To book a table again
-* Make changes to their reservation
 
 # Design
 
@@ -143,18 +141,10 @@ The images used on this site are meant to be images of the pub itself. As this i
 </details>
 
 <details>
-<summary>Log in page</summary>
-- Desktop View 
-  
-![Desktop View]()
-
-</details>
-
-<details>
 <summary>Admin/ Staff page</summary>
 - Desktop View
   
-![Desktop View]()
+![Desktop View](media/images/Wireframe%20-%20Admin%20page.png)
 </details>
 
 # Database models
