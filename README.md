@@ -74,8 +74,8 @@ Having an online presence will help boost this businesses returns, as it will re
 
 ## Returning visitor goals
 
-* See the latest events
-* To book a table again
+- See the latest events
+- To book a table again
 
 # Design
 
@@ -144,16 +144,24 @@ The images used on this site are meant to be images of the pub itself. As this i
 <summary>Admin/ Staff page</summary>
 - Desktop View
   
-![Desktop View](media/images/Wireframe%20-%20Admin%20page.png)
+![Desktop View](media/images/Wireframe-Admin-page.png)
 </details>
 
 # Database models
 
 - These are entity relationship diagrams that visually show the structure of the database tables which were used as a reference when building the models
 
-* Events model
+<details>
+<summary>Events model</summary>
 
-* Booking model
+![Events model](media/images/Model-Events.png)
+</details>
+
+<details>
+<summary>Booking model</summary>
+
+![Booking model](media/images/Model-booking.png)
+</details>
 
 # Features
 
@@ -238,7 +246,7 @@ All pages also contain the same footer, which has all the contact information of
 
 # Testing
 
-- validated by using online validation tools W3C HTML Validator, W3C CSS Validator, JSHint JavaScript Validator and the PEP8 Online Validator.
+- Validated by using online validation tools W3C HTML Validator, W3C CSS Validator, JSHint JavaScript Validator and the PEP8 Online Validator.
 
 * HTML
 
@@ -275,11 +283,11 @@ All pages also contain the same footer, which has all the contact information of
   - As a user, I can find out more about this business by viewing the website and seeing basic information such as who they are, where they are and what they do.
   - Acceptance Criteria:
     - Website contains the name of the business and contact details such as phone number and address
-      - Completed?
+      - Completed
     - Home page with a quick summary of what the business does - food, events, drinks
-      - Completed?
+      - Completed
     - Menu's page to show the range of food and drink on offer
-      - Completed?
+      - Completed
 
 * User story 2 - Have an events page
 
@@ -287,34 +295,28 @@ All pages also contain the same footer, which has all the contact information of
 
   - Acceptance Criteria:
     - Only accessible by and admin/ staff log in
-      - Completed?
+      - Completed
     - Ability to create, edit and delete an event
-      - Completed?
+      - Completed
 
 * User story 3 - Booking system
   - As a site user, I can create a booking for the restaurant.
   - Acceptance Criteria:
     - Create a booking
-      - Completed?
+      - Completed
     - Select the date and time
-      - Completed?
+      - Completed
     - Select the number of people
-      - Completed?
-* User story 4 - Edit and delete bookings
-  - Acceptance Criteria:
-    - Ability for user to edit their booking
-      - Completed?
-    - Ability for user to delete their booking
-      - Completed?
+      - Completed
 * User story 5- Accept and manage bookings
   - As a site admin I can manage all bookings by accepting, edit and delete bookings
   - Acceptance Criteria:
     - Admin page displaying all bookings
-      - Completed?
+      - Completed
     - Ability to accept or reject booking
-      - Completed?
+      - Completed
     - Ability to edit and delete a booking
-      - Completed?
+      - Completed
 
 ## Manual Testing
 
