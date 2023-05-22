@@ -155,12 +155,14 @@ The images used on this site are meant to be images of the pub itself. As this i
 <summary>Events model</summary>
 
 ![Events model](media/images/Model-Events.png)
+
 </details>
 
 <details>
 <summary>Booking model</summary>
 
 ![Booking model](media/images/Model-booking.png)
+
 </details>
 
 # Features
@@ -321,6 +323,29 @@ All pages also contain the same footer, which has all the contact information of
 ## Manual Testing
 
 Manual testing was used to ensure all aspects of this site work as intended.
+
+| Page           | Test                                                                    | Completed |
+| -------------- | ----------------------------------------------------------------------- | --------- |
+| Home Page      |
+|                | All visuals load (CSS,HTML)                                             |           |
+|                | Nav bar compresses on smaller screens                                   |           |
+|                | Each nav link takes the user to the correct page                        |           |
+|                | 'Book' button takes user to booking page                                |           |
+|                | Event's, Menu's and reserve a table buttons takes user to relevant page |           |
+|                | All images are clear, not stretched and visable                         |           |
+|                | Page is viewable on small and large screen sizes                        |           |
+|                | All text is readable                                                    |           |
+|                | Footer is clear and readable on all sizes                               |           |
+|                | Footer links takes user to the correct social media site                |           |
+| Menu page      |                                                                         |           |
+|                | Nav bar works correctly                                                 |           |
+|                | Page is clear on different screen sizes                                 |           |
+|                | All font is readable                                                    |           |
+|                | Each button takes user to relevant menu                                 |           |
+|                | All images are clear and load on different screen sizes                 |           |
+|                | Footer works and is visable                                             |           |
+| Breakfast menu |                                                                         |           |
+|                |                                                                         |           |
 
 # Credits
 
