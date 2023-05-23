@@ -325,14 +325,14 @@ All pages also contain the same footer, which has all the contact information of
 Manual testing was used to ensure all aspects of this site work as intended.
 
 | Page              | Test                                                                         | Completed? |
-|-------------------|------------------------------------------------------------------------------|------------|
+| ----------------- | ---------------------------------------------------------------------------- | ---------- | --- |
 | Home Page         |                                                                              |            |
 |                   | All visuals load (CSS, HTML)                                                 | Yes        |
 |                   | Nav bar compresses on smaller screens                                        | Yes        |
 |                   | Each nav link takes the user to the correct page                             | Yes        |
 |                   | Book' button takes user to booking page                                      | Yes        |
 |                   | Event's, Menu's and reserve a table buttons takes user to relevant page      | Yes        |
-|                   | All images are clear, not stretched and visable                              | Yes        |
+|                   | All images are clear, not stretched and visible                              | Yes        |
 |                   | Page is viewable on small and large screen sizes                             | Yes        |
 |                   | All text is readable                                                         | Yes        |
 |                   | Footer is clear and readable on all sizes                                    | Yes        |
@@ -343,26 +343,26 @@ Manual testing was used to ensure all aspects of this site work as intended.
 |                   | All font is readable                                                         | Yes        |
 |                   | Each button takes user to relevant menu                                      | Yes        |
 |                   | All images are clear and load on different screen sizes                      | Yes        |
-|                   | Footer works and is visable |                                                | Yes        |
-| Breakfast menu |  |                                                                              | Yes        |
-|                   | Nav bar working and visable                                                  | Yes        |
+|                   | Footer works and is visible                                                  |            | Yes |
+| Breakfast menu    |                                                                              |            | Yes |
+|                   | Nav bar working and visible                                                  | Yes        |
 |                   | Image loads in and is clear, and not stretched                               | Yes        |
-|                   | Page title is clear and visable                                              | Yes        |
+|                   | Page title is clear and visible                                              | Yes        |
 |                   | Menu is clear and readable on all screen sizes                               | Yes        |
 | Main menu         |                                                                              | Yes        |
-|                   | Nav bar working and visable                                                  | Yes        |
+|                   | Nav bar working and visible                                                  | Yes        |
 |                   | Image loads in and is clear, and not stretched                               | Yes        |
-|                   | Page title is clear and visable                                              | Yes        |
+|                   | Page title is clear and visible                                              | Yes        |
 |                   | Menu is clear and readable on all screen sizes                               | Yes        |
 | Drinks menu       |                                                                              | Yes        |
-|                   | Nav bar working and visable                                                  | Yes        |
+|                   | Nav bar working and visible                                                  | Yes        |
 |                   | Image loads in and is clear, and not stretched                               | Yes        |
-|                   | Page title is clear and visable                                              | Yes        |
+|                   | Page title is clear and visible                                              | Yes        |
 |                   | Menu is clear and readable on all screen sizes                               | Yes        |
 | Events page       |                                                                              |            |
-|                   | Add event button is only visable to logged in staff users                    | Yes        |
+|                   | Add event button is only visible to logged in staff users                    | Yes        |
 |                   | Add event button takes user to the add event form page                       | Yes        |
-|                   | Edit and delete buttons on each event are only visable for admin/staff users | Yes        |
+|                   | Edit and delete buttons on each event are only visible for admin/staff users | Yes        |
 |                   | Edit button takes user to the edit form page                                 | Yes        |
 |                   | Delete event deletes the event                                               | Yes        |
 |                   | All images are clear and unstretched (unless user uploads a poor image)      | Yes        |
@@ -383,9 +383,9 @@ Manual testing was used to ensure all aspects of this site work as intended.
 |                   | Place holder image uploads correctly if no image is entered                  | Yes        |
 |                   | Price must be entered and be a number                                        | Yes        |
 | Edit Event        |                                                                              |            |
-|                   | Add event button is only visable to logged in staff users                    | Yes        |
+|                   | Add event button is only visible to logged in staff users                    | Yes        |
 |                   | Add event button takes user to the add event form page                       | Yes        |
-|                   | Edit and delete buttons on each event are only visable for admin/staff users | Yes        |
+|                   | Edit and delete buttons on each event are only visible for admin/staff users | Yes        |
 |                   | Edit button takes user to the edit form page                                 | Yes        |
 |                   | Delete event deletes the event                                               | Yes        |
 |                   | All images are clear and unstretched (unless user uploads a poor image)      | Yes        |
