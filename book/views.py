@@ -41,7 +41,7 @@ def edit_book(request, book_id):
 
         if book_form.is_valid():
             book_form.save()
-            return render(request, "bookeditsuccess.html")
+            return redirect("managebookings")
     book_form = BookForm(instance=book)
     context = {"book_form": book_form}
     return render(request, "edit.html", context)
@@ -51,7 +51,7 @@ def toggle_book(request, book_id):
     book = get_object_or_404(Book, id=book_id)
     book.approved = not book.approved
     book.save()
-    return redirect("manage_bookings")
+    return redirect("managebookings")
 
 
 def delete_book(request, book_id):
