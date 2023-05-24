@@ -42,7 +42,6 @@ This website will display events they are hosting, their menus, allow users to m
   - [Testing user stories](#testing-user-stories)
   - [Manual Testing](#manual-testing)
 - [Credits](#credits)
-  - [Code Used](#code-used)
   - [Content](#content)
   - [ Media](#media)
   - [ Acknowledgments](#acknowledgments)
@@ -325,7 +324,7 @@ All pages also contain the same footer, which has all the contact information of
 Manual testing was used to ensure all aspects of this site work as intended.
 
 | Page              | Test                                                                         | Completed? |
-| ----------------- | ---------------------------------------------------------------------------- | ---------- | --- |
+|-------------------|------------------------------------------------------------------------------|------------|
 | Home Page         |                                                                              |            |
 |                   | All visuals load (CSS, HTML)                                                 | Yes        |
 |                   | Nav bar compresses on smaller screens                                        | Yes        |
@@ -343,8 +342,8 @@ Manual testing was used to ensure all aspects of this site work as intended.
 |                   | All font is readable                                                         | Yes        |
 |                   | Each button takes user to relevant menu                                      | Yes        |
 |                   | All images are clear and load on different screen sizes                      | Yes        |
-|                   | Footer works and is visible                                                  |            | Yes |
-| Breakfast menu    |                                                                              |            | Yes |
+|                   | Footer works and is visible |                                                | Yes        |
+| Breakfast menu |  |                                                                              | Yes        |
 |                   | Nav bar working and visible                                                  | Yes        |
 |                   | Image loads in and is clear, and not stretched                               | Yes        |
 |                   | Page title is clear and visible                                              | Yes        |
@@ -352,17 +351,17 @@ Manual testing was used to ensure all aspects of this site work as intended.
 | Main menu         |                                                                              | Yes        |
 |                   | Nav bar working and visible                                                  | Yes        |
 |                   | Image loads in and is clear, and not stretched                               | Yes        |
-|                   | Page title is clear and visible                                              | Yes        |
+|                   | Page title is clear and visable                                              | Yes        |
 |                   | Menu is clear and readable on all screen sizes                               | Yes        |
 | Drinks menu       |                                                                              | Yes        |
-|                   | Nav bar working and visible                                                  | Yes        |
+|                   | Nav bar working and visable                                                  | Yes        |
 |                   | Image loads in and is clear, and not stretched                               | Yes        |
-|                   | Page title is clear and visible                                              | Yes        |
+|                   | Page title is clear and visable                                              | Yes        |
 |                   | Menu is clear and readable on all screen sizes                               | Yes        |
 | Events page       |                                                                              |            |
-|                   | Add event button is only visible to logged in staff users                    | Yes        |
+|                   | Add event button is only visable to logged in staff users                    | Yes        |
 |                   | Add event button takes user to the add event form page                       | Yes        |
-|                   | Edit and delete buttons on each event are only visible for admin/staff users | Yes        |
+|                   | Edit and delete buttons on each event are only visable for admin/staff users | Yes        |
 |                   | Edit button takes user to the edit form page                                 | Yes        |
 |                   | Delete event deletes the event                                               | Yes        |
 |                   | All images are clear and unstretched (unless user uploads a poor image)      | Yes        |
@@ -383,9 +382,9 @@ Manual testing was used to ensure all aspects of this site work as intended.
 |                   | Place holder image uploads correctly if no image is entered                  | Yes        |
 |                   | Price must be entered and be a number                                        | Yes        |
 | Edit Event        |                                                                              |            |
-|                   | Add event button is only visible to logged in staff users                    | Yes        |
+|                   | Add event button is only visable to logged in staff users                    | Yes        |
 |                   | Add event button takes user to the add event form page                       | Yes        |
-|                   | Edit and delete buttons on each event are only visible for admin/staff users | Yes        |
+|                   | Edit and delete buttons on each event are only visable for admin/staff users | Yes        |
 |                   | Edit button takes user to the edit form page                                 | Yes        |
 |                   | Delete event deletes the event                                               | Yes        |
 |                   | All images are clear and unstretched (unless user uploads a poor image)      | Yes        |
@@ -411,13 +410,9 @@ Manual testing was used to ensure all aspects of this site work as intended.
 - Readme template - <https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website>
 - CI Tutorial projects - Hello Django and I Think I Blog for inspiration and a basis to build on
 
-## Code Used
-
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
-
 ## Content
 
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
+All content has been written by myself for a fictional pub
 
 ##  Media
 
@@ -443,4 +438,5 @@ Image sources
 
 ##  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+- The Code Institute courses and walkthroughs for inspiration for this froject
+- The Code Institute tutors for helping me with bugs and issues
